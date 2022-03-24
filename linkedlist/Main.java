@@ -13,7 +13,11 @@ public class Main {
 		list.insertLast(10);
 		list.insert(100, 3);
 		list.display();
-		System.out.println(list.size());
+		System.out.println("first deleted item " + list.deleteFirst());
+		System.out.println("last deteled item " + list.deleteLast());
+		System.out.println("deteled item " + list.delete(2));
+		list.display();
+		System.out.println("size = " + list.size());
 
 	}
 
