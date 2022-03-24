@@ -14,9 +14,7 @@ public class LL {
 		node.next = head;
 		head = node;
 		
-		if (tail == null) {
-			tail = head;
-		}
+		if (tail == null) tail = head;
 		size++;	
 	}
 	
@@ -43,9 +41,9 @@ public class LL {
 		}
 		
 		Node temp = head;
-		for (int i = 1; i < pos; i++) {
+		for (int i = 1; i < pos; i++) 
 			temp = temp.next;
-		}
+		
 		Node node = new Node(val, temp.next);
 		temp.next = node;
 		size++;
@@ -83,10 +81,10 @@ public class LL {
 		if (index == size-1) return deleteLast();
 		
 		Node temp = head;
-		for (int i = 1; i < index; i++) {
+		for (int i = 1; i < index; i++) 
 			temp = temp.next;
-		}
-		int val = temp.value;
+		
+		int val = temp.next.value;
 		temp.next = temp.next.next;
 		size--;
 		
@@ -96,17 +94,13 @@ public class LL {
 	public Node find(int value) {
 		Node temp = head;
 		while (temp != null) {
-			if (temp.value == value) {
+			if (temp.value == value) 
 				return temp;
-			}
+			
 			temp = temp.next;
 		}
 		
 		return null;
-	}
-	
-	public int size() {
-		return size;
 	}
 	
 	public void display() {
@@ -119,13 +113,13 @@ public class LL {
 		System.out.println("null");
 	}
 	
+	public int size() { return size; }
+	
 	private class Node{
 		private int value;
 		private Node next;
 		
-		public Node(int value) {
-			this.value = value;
-		}
+		public Node(int value) { this.value = value; }
 		
 		public Node(int value, Node next) {
 			this.value = value;
