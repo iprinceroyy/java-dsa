@@ -93,6 +93,18 @@ public class LL {
 		return val;
 	}
 	
+	public Node find(int value) {
+		Node temp = head;
+		while (temp != null) {
+			if (temp.value == value) {
+				return temp;
+			}
+			temp = temp.next;
+		}
+		
+		return null;
+	}
+	
 	public int size() {
 		return size;
 	}
