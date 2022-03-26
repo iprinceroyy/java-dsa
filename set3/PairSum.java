@@ -25,6 +25,17 @@ public class PairSum {
 				hm.put(arr[i], 1);
 		}
 		
+		List<Integer> outer = new ArrayList<>();
+		for (Map.Entry<Integer, Integer>it: hm.entrySet()) {
+			List<Integer> inner = new ArrayList<>();
+			if (it.getKey() + it.getValue() == k) {
+				inner.add(it.getKey());
+				inner.add(it.getValue());
+			}
+		}
+		
+		System.out.println(outer);
+		
 		return count;
 		
 	}

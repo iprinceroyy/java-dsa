@@ -6,8 +6,8 @@ public class LargestFactor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(factors(120));
-		//System.out.println(isFacto(2));
+		System.out.println(factors(96));
+		//System.out.println(isFacto(24));
 
 	}
 	
@@ -38,15 +38,11 @@ public class LargestFactor {
 		int i = 1;
 		int facto = 1;
 		while (facto < n) {
-			if (n % i != 0) {
-				return false;
-			}
 			facto *= i;
-			n /= i;
 			i++;
 		}
 		
-		return true;
+		return facto == n;
 	}
 
 }
