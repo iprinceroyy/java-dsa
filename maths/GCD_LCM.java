@@ -7,7 +7,7 @@ public class GCD_LCM {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(gcd(270, 192));
-		System.out.println(lcm(0, 8));
+		System.out.println(lcm(2, 8));
 
 		
 	}

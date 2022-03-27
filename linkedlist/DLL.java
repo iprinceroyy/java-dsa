@@ -2,7 +2,7 @@ package linkedlist;
 
 public class DLL {
 
-	private Node head;
+	Node head;
 	private int size;
 	public DLL() { this.size = 0; }
 

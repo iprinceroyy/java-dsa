@@ -12,6 +12,7 @@ public class SinglyLinkedList {
 		list.insertFirst(19);
 		list.insertLast(10);
 		list.insert(100, 3);
+		list.insertRec(90, 3);
 		list.display();
 		System.out.println("first deleted item " + list.deleteFirst());
 		System.out.println("last deteled item " + list.deleteLast());
